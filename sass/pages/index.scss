@@ -1,0 +1,220 @@
+@use "../global";
+@use "../components/button";
+@use "../components/like";
+@use "../layout/header";
+@use "../layout/footer";
+@use "../utils/mixin";
+
+header {
+  .home {
+    margin-top: 77px;
+    background-image: url("../../assets/images/home/navbar/home/bg.png");
+    background-size: cover;
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      .home__left {
+        display: flex;
+        img {
+          max-width: 100%;
+        }
+      }
+      .home__right {
+        span {
+          @include mixin.title-1;
+        }
+      }
+    }
+  }
+}
+
+main {
+  padding-top: 80px;
+  background: #fbf8ec;
+  .container {
+    .stock {
+      display: flex;
+      // align-items: center;
+      gap: 40px;
+      flex-direction: column;
+      .stock__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        span {
+          @include mixin.title-2;
+        }
+        button {
+          background: transparent;
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          span {
+            @include mixin.title-4;
+          }
+        }
+      }
+      .stock__cards__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        .stock__card {
+          background-color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          border: 1px solid #ff6633;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px;
+          .stock__card__body {
+            position: relative;
+            display: flex;
+
+            .discount {
+              position: absolute;
+              bottom: 10px;
+              left: 10px;
+              padding: 4px 8px;
+              border-radius: 4px;
+              background: #ff6633;
+              -webkit-border-radius: 4px;
+              -moz-border-radius: 4px;
+              -ms-border-radius: 4px;
+              -o-border-radius: 4px;
+              span {
+                @include mixin.title-4-2;
+              }
+            }
+          }
+          .stock__card__footer {
+            padding: 8px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            .price {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              .by__card {
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+                h1 {
+                  @include mixin.title-3;
+                }
+                span {
+                  @include mixin.title-5;
+                }
+              }
+              .by__cash {
+                display: flex;
+                align-items: end;
+                flex-direction: column;
+                h1 {
+                  @include mixin.title-4;
+                }
+                span {
+                  @include mixin.title-5;
+                }
+              }
+            }
+            .about__goods {
+              max-width: 100%;
+              span {
+                max-width: 150px;
+                @include mixin.title-4-4;
+                -webkit-line-clamp: 2;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+              }
+            }
+          }
+        }
+      }
+    }
+    .new__goods {
+      margin-top: 120px;
+      display: flex;
+      // align-items: center;
+      gap: 40px;
+      flex-direction: column;
+      .new__goods__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        span {
+          @include mixin.title-2;
+        }
+        button {
+          background: transparent;
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          span {
+            @include mixin.title-4;
+          }
+        }
+      }
+      .new__goods__cards__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        .new__goods__card {
+          background-color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          border: 1px solid #ff6633;
+          border-radius: 10px;
+          .new__goods__card__body {
+            position: relative;
+            .discount {
+              position: absolute;
+              bottom: 10px;
+              left: 10px;
+              padding: 4px 8px;
+              border-radius: 4px;
+              background: #ff6633;
+              -webkit-border-radius: 4px;
+              -moz-border-radius: 4px;
+              -ms-border-radius: 4px;
+              -o-border-radius: 4px;
+              span {
+                @include mixin.title-4-2;
+              }
+            }
+          }
+          .new__goods__card__footer {
+            padding: 8px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            .price {
+              h1 {
+                @include mixin.title-3;
+              }
+            }
+
+            .about__goods {
+              max-width: 100%;
+              span {
+                max-width: 200px;
+                @include mixin.title-4-4;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
