@@ -25,11 +25,24 @@
               >
             </div>
             <div class="goods__category">
-              <button>
+              <button id="openModalBtn">
                 <img src="assets/images/home/icons/catalogue.svg" alt="" /><span
                   >Каталог</span
                 >
               </button>
+              <div id="catalogModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <ul>
+                    <li>Молоко сыр яйцо</li>
+                    <li>Хлеб</li>
+                    <li>фрукты и овощи</li>
+                    <li>напитки</li>
+                    <li>чай , кофе</li>
+                  </ul>
+                </div>
+              </div>
+  
               <input
                 type="search"
                 placeholder="Найти товар"
@@ -37,6 +50,7 @@
                 class="goods_search"
               />
             </div>
+            
           </div>
           <div class="nav__right">
             <div class="controlling">
@@ -134,7 +148,7 @@
           <div class="stock__header">
             <span>Акции</span>
             <button class="stock__all_products">
-              <span class="all_products">Все продукты</span
+              <span class="all_products"><a href="./all-products.html">Все продукты</a></span
               ><img
                 src="assets/images/home/icons/arrow_right.svg"
                 alt="arrow"
@@ -147,7 +161,7 @@
           <div class="new__goods__header">
             <span>Новинки</span>
             <button class="new__goods__all_products">
-              <span class="all_products">Все продукты</span
+              <a class="all_products" href="./all-products.html">Все продукты</a>
               ><img
                 src="assets/images/home/icons/arrow_right.svg"
                 alt="arrow"

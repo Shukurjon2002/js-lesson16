@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./css/index.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <div class="nav__left">
+            <div class="logo">
+              <a href="#" class="logo__link"
+                ><img src="assets/images/home/logo.png" alt="logo" /><span
+                  >СЕВЕРЯНОЧКА</span
+                ></a
+              >
+            </div>
+            <div class="goods__category">
+              <button id="openModalBtn">
+                <img src="assets/images/home/icons/catalogue.svg" alt="" /><span
+                  >Каталог</span
+                >
+              </button>
+              <div id="catalogModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <ul>
+                    <li>Молоко сыр яйцо</li>
+                    <li>Хлеб</li>
+                    <li>фрукты и овощи</li>
+                    <li>напитки</li>
+                    <li>чай , кофе</li>
+                  </ul>
+                </div>
+              </div>
+  
+              <input
+                type="search"
+                placeholder="Найти товар"
+                name="search"
+                class="goods_search"
+              />
+            </div>
+            
+          </div>
+          <div class="nav__right">
+            <div class="controlling">
+              <ul class="control">
+                <li class="control__elements">
+                  <a href="#"
+                    ><img
+                      src="assets/images/home/icons/catalogue(2).svg"
+                      alt="catalogue"
+                    />
+                    <span>Каталог</span></a
+                  >
+                </li>
+                <li class="control__elements">
+                  <a href="#"
+                    ><img
+                      src="assets/images/home/icons/like.svg"
+                      alt="favourites"
+                    /><span>Избранное</span></a
+                  >
+                </li>
+                <li class="control__elements">
+                  <a href="#"
+                    ><img
+                      src="assets/images/home/icons/goods.svg"
+                      alt="goods"
+                    /><span>Продукты</span></a
+                  >
+                </li>
+                <li class="control__elements">
+                  <a href="#"
+                    ><img
+                      src="assets/images/home/icons/shopping-cart.svg"
+                      alt="shopping-cart"
+                    /><span>Корзина</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="signing">
+              <a href="#" class="avatar"
+                ><img
+                  src="assets/images/home/navbar/avatar.svg"
+                  alt="avatar" /><span>Алексей</span
+                ><button>
+                  <img
+                    src="assets/images/home/icons/arrow_down.svg"
+                    alt="arrow"
+                  /></button
+              ></a>
+            </div>
+            <div class="sign__modal">
+              <button class="close__modal">
+                <img
+                  src="assets/images/home/icons/closeBtnMain.svg"
+                  alt="close"
+                />
+              </button>
+              <div class="sign__modal__body">
+                <h1>Welcome!</h1>
+                <hr />
+                <form action="signing__form">
+                  <div class="uName__row">
+                    <label for="userName">Username</label>
+                    <input type="text" id="userName" />
+                  </div>
+                  <div class="passWord__row">
+                    <label for="passWord">Password</label>
+                    <input type="password" id="passWord" />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="home">
+        <div class="container">
+          <div class="home__left">
+            <img
+              src="./assets/images/home/navbar/home/left.png"
+              alt="jpg
+            "
+            />
+          </div>
+          <div class="home__right">
+            <span>Доставка бесплатно от 1000 ₽</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main container">
+        <div class="stock">
+          <div class="stock__header">
+            <span>Акции</span>
+            <button class="stock__all_products">
+              <span class="all_products">Все продукты</span
+              ><img
+                src="assets/images/home/icons/arrow_right.svg"
+                alt="arrow"
+              />
+            </button>
+          </div>
+          <div class="stock__cards__row"></div>
+        </div>
+        <!-- <div class="new__goods">
+          <div class="new__goods__header">
+            <span>Новинки</span>
+            <button class="new__goods__all_products">
+              <span class="all_products">Все продукты</span
+              ><img
+                src="assets/images/home/icons/arrow_right.svg"
+                alt="arrow"
+              />
+            </button>
+          </div>
+          <div class="new__goods__cards__row"></div>
+        </div> -->
+      </div>
+    </main>
+    <script src="./js/const.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/products-data.js"></script>
+    <script src="./js/product.js"></script>
+  </body>
+</html>
