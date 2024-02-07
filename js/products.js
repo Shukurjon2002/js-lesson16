@@ -52,3 +52,8 @@ function getProductCard({ id, description, discount, card, cash, image }) {
               </div>
             </div>`;
 }
+
+
+
+
+
